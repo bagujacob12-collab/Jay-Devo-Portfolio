@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay Devo | Software Engineer in Training</title>
+  <meta name="description" content="Jay Devo builds websites that make business easier for owners." />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">Jay Devo</a>
+
+      <!-- hamburger button, JS will use this later -->
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how">How I work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary nav__cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__label">Software Engineer in Training · Technology Builder</p>
+        <h1 class="hero__title">I build websites that make business easier.</h1>
+        <p class="hero__text">
+          I find the problem behind the request, then build the solution.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="mailto:YOUR-EMAIL@example.com" class="btn btn--outline">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__label">Selected work</p>
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects">
+
+          <!-- Project 1 -->
+          <article class="card project">
+            <div class="project__media">
+              <!-- CHANGE: your screenshot path -->
+              <img src="images/sarahs-restaurant.jpg" alt="Screenshot of Sarah's Restaurant website" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <span class="tag tag--live">Live</span>
+              <h3 class="project__title">Sarah's Restaurant Website</h3>
+              <p class="project__text">
+                A multi-page restaurant website with menu, catering and contact pages,
+                plus WhatsApp order buttons.
+              </p>
+              <ul class="project__tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>GitHub Pages</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://bagujacob12-collab.github.io/sarah-restaurant-website/" class="btn btn--primary" target="_blank" rel="noopener">Live site</a>
+                <!-- CHANGE: your GitHub repo link -->
+                <a href="https://github.com/bagujacob12-collab/sarah-restaurant-website" class="btn btn--outline" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project">
+            <div class="project__media">
+              <!-- CHANGE: your screenshot path -->
+              <img src="images/luxe-hair.jpg" alt="Screenshot of Luxe Hair Collections website" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <span class="tag tag--live">Live</span>
+              <h3 class="project__title">Luxe Hair Collections</h3>
+              <p class="project__text">
+                A dark, premium hair-commerce website built for a friend's business,
+                made for product discovery and ordering through WhatsApp.
+              </p>
+              <ul class="project__tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li> <!-- CHANGE: keep only what is actually used -->
+              </ul>
+              <div class="project__links">
+                <a href="https://bagujacob12-collab.github.io/luxe-hair-collections/" class="btn btn--primary" target="_blank" rel="noopener">Live site</a>
+                <!-- CHANGE: your GitHub repo link -->
+                <a href="https://github.com/bagujacob12-collab/luxe-hair-collections" class="btn btn--outline" target="_blank" rel="noopener">Source code</a>
+                
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: copy one <article> above and paste here when ready -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section__label">What I do</p>
+        <h2 class="section__title">Making things easier for business owners</h2>
+        <p class="section__intro">
+          A good website and smooth day-to-day work go hand in hand.
+          I build the first and help simplify the second.
+        </p>
+
+        <div class="services">
+          <article class="card service">
+            <h3 class="service__title">Business websites</h3>
+            <p class="service__text">A clear, professional online home that shows what you offer and makes people trust you.</p>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Landing pages</h3>
+            <p class="service__text">One focused page for a product, service or campaign, built to get enquiries.</p>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Redesigns and mobile fixes</h3>
+            <p class="service__text">Make an outdated or confusing site clean, fast and easy to use on a phone.</p>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Online catalogues</h3>
+            <p class="service__text">Show your products clearly so customers can browse and choose with ease.</p>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">WhatsApp order flows</h3>
+            <p class="service__text">Let customers enquire or order in one tap, with the details already filled in.</p>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Simplifying repeated work</h3>
+            <p class="service__text">I look for manual, repeated tasks in your workflow and build ways to make them simpler.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOW I WORK ========== -->
+    <section class="section" id="how">
+      <div class="container">
+        <p class="section__label">Approach</p>
+        <h2 class="section__title">Solve the problem behind it</h2>
+
+        <ol class="steps">
+          <li class="card step">
+            <span class="step__number">01</span>
+            <h3 class="step__title">Understand the problem</h3>
+            <p class="step__text">I start with what is actually going wrong, not with what to build.</p>
+          </li>
+          <li class="card step">
+            <span class="step__number">02</span>
+            <h3 class="step__title">Recommend what fits</h3>
+            <p class="step__text">A new site, a fix, or a simpler workflow, based on your budget and needs.</p>
+          </li>
+          <li class="card step">
+            <span class="step__number">03</span>
+            <h3 class="step__title">Build and test</h3>
+            <p class="step__text">I build it in clear stages and test it on real devices before it goes live.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <p class="section__label">About</p>
+          <h2 class="section__title">Jay Devo</h2>
+        </div>
+        <div class="about__body">
+          <p>
+            I am Jay Devo, (Bagu Iorhumba Jacob) a Computer Science student at the National Open University of Nigeria.
+            I enjoy looking at a challenge, finding what is really going wrong, and building a useful way forward.
+          </p>
+          <p>
+            I learn by building real projects: plan it, build a piece, understand it, test it, fix it.
+            Websites are my foundation today. My direction is software, useful tools and products that solve real problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section__label">Toolbox</p>
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills">
+          <div class="card skills__group">
+            <h3 class="skills__title">Working with</h3>
+            <ul class="skills__list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Responsive design</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </div>
+
+          <div class="card skills__group">
+            <h3 class="skills__title">Developing</h3>
+            <ul class="skills__list">
+              <li>JavaScript</li>
+              <li>DOM and events</li>
+              <li>Git and GitHub</li>
+            </ul>
+          </div>
+
+          <div class="card skills__group">
+            <h3 class="skills__title">Exploring</h3>
+            <ul class="skills__list">
+              <li>Automation</li>
+              <li>AI tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <p class="section__label">Contact</p>
+        <h2 class="section__title">Let's talk about your project</h2>
+        <p class="section__intro">Email is best for details. WhatsApp is best for a quick chat.</p>
+
+        <div class="contact__actions">
+          <!-- CHANGE: your email -->
+          <a href="mailto:jaydevlab01@gmail.com" class="btn btn--primary">Email me</a>
+          
+          <a href="https://wa.me/2349164220790?text=Hi%20Jay%2C%20I%20saw%20your%20portfolio." class="btn btn--outline" target="_blank" rel="noopener">Quick chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 Jay Devo · Bagu Iorhumba Jacob</p>
+      <ul class="footer__social">
+        <!-- CHANGE: all links below -->
+        <li><a href="https://www.youtube.com/@jaydevo_1" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
